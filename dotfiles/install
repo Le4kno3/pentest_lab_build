@@ -53,7 +53,7 @@ _clone_dotfiles() {
     dotfiles_target="$HOME/.dotfiles"
     printf '\033[32mCloning repo into: \033[34m"%s"\n\033[0m' \
         "${dotfiles_target}"
-    git clone --recursive https://github.com/oliverwiegers/dotfiles \
+    git clone --recursive https://github.com/le4kno3/dotfiles \
         "${dotfiles_target}" || exit 1
     cd "${dotfiles_target}" || exit 1
     git checkout "${GIT_BRANCH}"
